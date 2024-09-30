@@ -55,7 +55,6 @@ const config: Config = {
           '5': 'hsl(var(--chart-5))',
         },
       },
-<<<<<<< HEAD
       keyframes: {
         shimmer: {
           '0%': { backgroundPosition: '-1000px 0' },
@@ -68,8 +67,6 @@ const config: Config = {
       backgroundSize: {
         '200%': '200% 100%',
       },
-=======
->>>>>>> 053a4893159df7e73e6a6d8a17d7c8cb4011801d
     },
   },
   plugins: [

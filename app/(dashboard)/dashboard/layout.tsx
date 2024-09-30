@@ -24,11 +24,7 @@ export default function DashboardLayout({
   return (
     <div className="flex flex-col min-h-[calc(100dvh-68px)] max-w-7xl mx-auto w-full">
       {/* Mobile header */}
-<<<<<<< HEAD
       <div className="lg:hidden flex items-center justify-between border-b p-4">
-=======
-      <div className="lg:hidden flex items-center justify-between bg-white border-b border-gray-200 p-4">
->>>>>>> 053a4893159df7e73e6a6d8a17d7c8cb4011801d
         <div className="flex items-center">
           <span className="font-medium">Settings</span>
         </div>
@@ -45,11 +41,7 @@ export default function DashboardLayout({
       <div className="flex flex-1 overflow-hidden h-full">
         {/* Sidebar */}
         <aside
-<<<<<<< HEAD
           className={`w-64 bg-black lg:bg-black text-white lg:block ${
-=======
-          className={`w-64 bg-white lg:bg-gray-50 border-r border-gray-200 lg:block ${
->>>>>>> 053a4893159df7e73e6a6d8a17d7c8cb4011801d
             isSidebarOpen ? 'block' : 'hidden'
           } lg:relative absolute inset-y-0 left-0 z-40 transform transition-transform duration-300 ease-in-out lg:translate-x-0 ${
             isSidebarOpen ? 'translate-x-0' : '-translate-x-full'
