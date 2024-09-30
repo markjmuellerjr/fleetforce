@@ -55,6 +55,18 @@ const config: Config = {
           '5': 'hsl(var(--chart-5))',
         },
       },
+      keyframes: {
+        shimmer: {
+          '0%': { backgroundPosition: '-1000px 0' },
+          '100%': { backgroundPosition: '1000px 0' },
+        },
+      },
+      animation: {
+        shimmer: 'shimmer 2s linear infinite',
+      },
+      backgroundSize: {
+        '200%': '200% 100%',
+      },
     },
   },
   plugins: [
