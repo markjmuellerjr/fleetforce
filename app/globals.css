@@ -68,6 +68,7 @@
     @apply bg-background text-foreground;
   }
 }
+<<<<<<< HEAD
 
 .glass {
   background: rgba(255, 255, 255, 0.1);
@@ -75,3 +76,5 @@
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
+=======
+>>>>>>> 053a4893159df7e73e6a6d8a17d7c8cb4011801d

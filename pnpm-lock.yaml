@@ -32,12 +32,15 @@ importers:
       '@radix-ui/react-slot':
         specifier: ^1.1.0
         version: 1.1.0(@types/react@18.3.7)(react@19.0.0-rc-7771d3a7-20240827)
+<<<<<<< HEAD
       '@splinetool/react-spline':
         specifier: ^4.0.0
         version: 4.0.0(@splinetool/runtime@1.9.28)(next@15.0.0-canary.152(react-dom@19.0.0-rc-7771d3a7-20240827(react@19.0.0-rc-7771d3a7-20240827))(react@19.0.0-rc-7771d3a7-20240827))(react-dom@19.0.0-rc-7771d3a7-20240827(react@19.0.0-rc-7771d3a7-20240827))(react@19.0.0-rc-7771d3a7-20240827)
       '@splinetool/runtime':
         specifier: ^1.9.28
         version: 1.9.28
+=======
+>>>>>>> 053a4893159df7e73e6a6d8a17d7c8cb4011801d
       '@types/bcryptjs':
         specifier: ^2.4.6
         version: 2.4.6
@@ -959,6 +962,7 @@ packages:
   '@radix-ui/rect@1.1.0':
     resolution: {integrity: sha512-A9+lCBZoaMJlVKcRBz2YByCG+Cp2t6nAnMnNba+XiWxnj6r4JUFqfsgwocMBZU9LPtdxC6wB56ySYpc7LQIoJg==}
 
+<<<<<<< HEAD
   '@splinetool/react-spline@4.0.0':
     resolution: {integrity: sha512-FqrV7/K2q998Y0t83QUauQxsifKWAg9CFZoSb64qRuH7IfHkDs5/OgU1ACkg0aTgsEPtFlH+kATQ+8X6MrizHQ==}
     peerDependencies:
@@ -973,6 +977,8 @@ packages:
   '@splinetool/runtime@1.9.28':
     resolution: {integrity: sha512-YWijR1tqiPuu1w4/lwu6s29Nw2xwgAOV8YdWrJk11vwZaf3BfavhrQWIfcSfxJ2d0gmHgTZDGQ5jubXrj/fuCQ==}
 
+=======
+>>>>>>> 053a4893159df7e73e6a6d8a17d7c8cb4011801d
   '@swc/counter@0.1.3':
     resolution: {integrity: sha512-e2BR4lsJkkRlKZ/qCHPw9ZaSxc0MVUd7gtbtaB7aMvHeJVYe8sOB8DBZkP2DtISHGSku9sCK6T6cnY0CtXrOCQ==}
 
@@ -1041,9 +1047,12 @@ packages:
     resolution: {integrity: sha512-Ceh+7ox5qe7LJuLHoY0feh3pHuUDHAcRUeyL2VYghZwfpkNIy/+8Ocg0a3UuSoYzavmylwuLWQOf3hl0jjMMIw==}
     engines: {node: '>=8'}
 
+<<<<<<< HEAD
   blurhash@2.0.5:
     resolution: {integrity: sha512-cRygWd7kGBQO3VEhPiTgq4Wc43ctsM+o46urrmPOiuAe+07fzlSB9OJVdpgDL0jPqXUVQ9ht7aq7kxOeJHRK+w==}
 
+=======
+>>>>>>> 053a4893159df7e73e6a6d8a17d7c8cb4011801d
   brace-expansion@2.0.1:
     resolution: {integrity: sha512-XnAIvQ8eM+kC6aULx6wuQiwVsnzsi9d3WxzV3FpWTGA19F621kwdbsAcFKXgKUHZWsy+mY6iL1sHTxWEFCytDA==}
 
@@ -1411,9 +1420,12 @@ packages:
   lines-and-columns@1.2.4:
     resolution: {integrity: sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==}
 
+<<<<<<< HEAD
   lodash.debounce@4.0.8:
     resolution: {integrity: sha512-FT1yDzDYEoYWhnSGnpE/4Kj1fLZkDFyqRb7fNt6FdYOSxlUWAtp42Eh6Wb0rGIv/m9Bgo7x4GhQbm5Ys4SG5ow==}
 
+=======
+>>>>>>> 053a4893159df7e73e6a6d8a17d7c8cb4011801d
   loose-envify@1.4.0:
     resolution: {integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==}
     hasBin: true
@@ -1497,10 +1509,13 @@ packages:
     resolution: {integrity: sha512-IRZSRuzJiynemAXPYtPe5BoI/RESNYR7TYm50MC5Mqbd3Jmw5y790sErYw3V6SryFJD64b74qQQs9wn5Bg/k3g==}
     engines: {node: '>= 0.4'}
 
+<<<<<<< HEAD
   on-change@4.0.2:
     resolution: {integrity: sha512-cMtCyuJmTx/bg2HCpHo3ZLeF7FZnBOapLqZHr2AlLeJ5Ul0Zu2mUJJz051Fdwu/Et2YW04ZD+TtU+gVy0ACNCA==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
 
+=======
+>>>>>>> 053a4893159df7e73e6a6d8a17d7c8cb4011801d
   package-json-from-dist@1.0.0:
     resolution: {integrity: sha512-dATvCeZN/8wQsGywez1mzHtTlP22H8OEfPrVMLNr4/eGa+ijtLn/6M5f0dY8UKNrC2O9UCU6SSoG3qRKnt7STw==}
 
@@ -1591,9 +1606,12 @@ packages:
     peerDependencies:
       react: 19.0.0-rc-7771d3a7-20240827
 
+<<<<<<< HEAD
   react-merge-refs@2.1.1:
     resolution: {integrity: sha512-jLQXJ/URln51zskhgppGJ2ub7b2WFKGq3cl3NYKtlHoTG+dN2q7EzWrn3hN3EgPsTMvpR9tpq5ijdp7YwFZkag==}
 
+=======
+>>>>>>> 053a4893159df7e73e6a6d8a17d7c8cb4011801d
   react-remove-scroll-bar@2.3.6:
     resolution: {integrity: sha512-DtSYaao4mBmX+HDo5YWYdBWQwYIQQshUV/dVxFxK+KM26Wjwp1gZ6rv6OC3oujI6Bfu6Xyg3TwK533AQutsn/g==}
     engines: {node: '>=10'}
@@ -1652,9 +1670,12 @@ packages:
   scheduler@0.25.0-rc-7771d3a7-20240827:
     resolution: {integrity: sha512-n4nHmAoerbIOSrH24w0+fcdCUwQ4Npm7yXfsrn09FL01OWIaxpuo4P0rj3qPyLFgsJDbn18sWvLVB/e/KPnR+A==}
 
+<<<<<<< HEAD
   semver-compare@1.0.0:
     resolution: {integrity: sha512-YM3/ITh2MJ5MtzaM429anh+x2jiLVjqILF4m4oyQB18W7Ggea7BfqdH/wGMK7dDiMghv/6WG7znWMwUDzJiXow==}
 
+=======
+>>>>>>> 053a4893159df7e73e6a6d8a17d7c8cb4011801d
   semver@7.6.3:
     resolution: {integrity: sha512-oVekP1cKtI+CTDvHWYFUcMtsK/00wmAEfyqKfNdARm8u1wNVhSgaX7A8d4UuIlUI5e84iEwOhs7ZPYRmzU9U6A==}
     engines: {node: '>=10'}
@@ -1772,9 +1793,12 @@ packages:
   thenify@3.3.1:
     resolution: {integrity: sha512-RVZSIV5IG10Hk3enotrhvz0T9em6cyHBLkH/YAZuKqd8hRkKhSfCGIcP2KUY0EPxndzANBmNllzWPwak+bheSw==}
 
+<<<<<<< HEAD
   thumbhash@0.1.1:
     resolution: {integrity: sha512-kH5pKeIIBPQXAOni2AiY/Cu/NKdkFREdpH+TLdM0g6WA7RriCv0kPLgP731ady67MhTAqrVG/4mnEeibVuCJcg==}
 
+=======
+>>>>>>> 053a4893159df7e73e6a6d8a17d7c8cb4011801d
   to-regex-range@5.0.1:
     resolution: {integrity: sha512-65P7iz6X5yEr1cwcgvQxbbIw7Uk3gOy5dIdtZ4rDveLqhrdJP+Li/Hx6tyK0NEb+2GCyneCMJiGqrADCSNk8sQ==}
     engines: {node: '>=8.0'}
@@ -2470,6 +2494,7 @@ snapshots:
 
   '@radix-ui/rect@1.1.0': {}
 
+<<<<<<< HEAD
   '@splinetool/react-spline@4.0.0(@splinetool/runtime@1.9.28)(next@15.0.0-canary.152(react-dom@19.0.0-rc-7771d3a7-20240827(react@19.0.0-rc-7771d3a7-20240827))(react@19.0.0-rc-7771d3a7-20240827))(react-dom@19.0.0-rc-7771d3a7-20240827(react@19.0.0-rc-7771d3a7-20240827))(react@19.0.0-rc-7771d3a7-20240827)':
     dependencies:
       '@splinetool/runtime': 1.9.28
@@ -2487,6 +2512,8 @@ snapshots:
       on-change: 4.0.2
       semver-compare: 1.0.0
 
+=======
+>>>>>>> 053a4893159df7e73e6a6d8a17d7c8cb4011801d
   '@swc/counter@0.1.3': {}
 
   '@swc/helpers@0.5.13':
@@ -2549,8 +2576,11 @@ snapshots:
 
   binary-extensions@2.3.0: {}
 
+<<<<<<< HEAD
   blurhash@2.0.5: {}
 
+=======
+>>>>>>> 053a4893159df7e73e6a6d8a17d7c8cb4011801d
   brace-expansion@2.0.1:
     dependencies:
       balanced-match: 1.0.2
@@ -2868,8 +2898,11 @@ snapshots:
 
   lines-and-columns@1.2.4: {}
 
+<<<<<<< HEAD
   lodash.debounce@4.0.8: {}
 
+=======
+>>>>>>> 053a4893159df7e73e6a6d8a17d7c8cb4011801d
   loose-envify@1.4.0:
     dependencies:
       js-tokens: 4.0.0
@@ -2942,8 +2975,11 @@ snapshots:
 
   object-inspect@1.13.2: {}
 
+<<<<<<< HEAD
   on-change@4.0.2: {}
 
+=======
+>>>>>>> 053a4893159df7e73e6a6d8a17d7c8cb4011801d
   package-json-from-dist@1.0.0: {}
 
   path-key@3.1.1: {}
@@ -3019,8 +3055,11 @@ snapshots:
       react: 19.0.0-rc-7771d3a7-20240827
       scheduler: 0.25.0-rc-7771d3a7-20240827
 
+<<<<<<< HEAD
   react-merge-refs@2.1.1: {}
 
+=======
+>>>>>>> 053a4893159df7e73e6a6d8a17d7c8cb4011801d
   react-remove-scroll-bar@2.3.6(@types/react@18.3.7)(react@19.0.0-rc-7771d3a7-20240827):
     dependencies:
       react: 19.0.0-rc-7771d3a7-20240827
@@ -3075,8 +3114,11 @@ snapshots:
 
   scheduler@0.25.0-rc-7771d3a7-20240827: {}
 
+<<<<<<< HEAD
   semver-compare@1.0.0: {}
 
+=======
+>>>>>>> 053a4893159df7e73e6a6d8a17d7c8cb4011801d
   semver@7.6.3:
     optional: true
 
@@ -3236,8 +3278,11 @@ snapshots:
     dependencies:
       any-promise: 1.3.0
 
+<<<<<<< HEAD
   thumbhash@0.1.1: {}
 
+=======
+>>>>>>> 053a4893159df7e73e6a6d8a17d7c8cb4011801d
   to-regex-range@5.0.1:
     dependencies:
       is-number: 7.0.0

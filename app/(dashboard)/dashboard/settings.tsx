@@ -26,16 +26,27 @@ export function Settings({ teamData }: { teamData: TeamDataWithMembers }) {
 
   return (
     <section className="flex-1 p-4 lg:p-8">
+<<<<<<< HEAD
       <h1 className="text-lg lg:text-2xl font-medium mb-6 text-white">Team Settings</h1>
       <Card className="mb-8 glass">
         <CardHeader>
           <CardTitle className='text-white'>Team Subscription</CardTitle>
+=======
+      <h1 className="text-lg lg:text-2xl font-medium mb-6">Team Settings</h1>
+      <Card className="mb-8">
+        <CardHeader>
+          <CardTitle>Team Subscription</CardTitle>
+>>>>>>> 053a4893159df7e73e6a6d8a17d7c8cb4011801d
         </CardHeader>
         <CardContent>
           <div className="space-y-4">
             <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center">
               <div className="mb-4 sm:mb-0">
+<<<<<<< HEAD
                 <p className="font-medium text-white">
+=======
+                <p className="font-medium">
+>>>>>>> 053a4893159df7e73e6a6d8a17d7c8cb4011801d
                   Current Plan: {teamData.planName || 'Free'}
                 </p>
                 <p className="text-sm text-muted-foreground">
@@ -55,9 +66,15 @@ export function Settings({ teamData }: { teamData: TeamDataWithMembers }) {
           </div>
         </CardContent>
       </Card>
+<<<<<<< HEAD
       <Card className="mb-8 glass">
         <CardHeader>
           <CardTitle className='text-white'>Team Members</CardTitle>
+=======
+      <Card className="mb-8">
+        <CardHeader>
+          <CardTitle>Team Members</CardTitle>
+>>>>>>> 053a4893159df7e73e6a6d8a17d7c8cb4011801d
         </CardHeader>
         <CardContent>
           <ul className="space-y-4">
@@ -77,10 +94,17 @@ export function Settings({ teamData }: { teamData: TeamDataWithMembers }) {
                     </AvatarFallback>
                   </Avatar>
                   <div>
+<<<<<<< HEAD
                     <p className="font-medium text-white">
                       {getUserDisplayName(member.user)}
                     </p>
                     <p className="text-sm text-muted-foreground capitalize text-gray-600">
+=======
+                    <p className="font-medium">
+                      {getUserDisplayName(member.user)}
+                    </p>
+                    <p className="text-sm text-muted-foreground capitalize">
+>>>>>>> 053a4893159df7e73e6a6d8a17d7c8cb4011801d
                       {member.role}
                     </p>
                   </div>
