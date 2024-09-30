@@ -12,38 +12,66 @@ export default async function PricingPage() {
     getStripeProducts(),
   ]);
 
-  const basePlan = products.find((product) => product.name === 'Base');
-  const plusPlan = products.find((product) => product.name === 'Plus');
+  const basicPlan = products.find((product) => product.name === 'Basic');
+  const standardPlan = products.find((product) => product.name === 'Standard');
+  const proPlan = products.find((product) => product.name === 'Pro');
+  const enterprisePlan = products.find((product) => product.name === 'Enterprise');
 
-  const basePrice = prices.find((price) => price.productId === basePlan?.id);
-  const plusPrice = prices.find((price) => price.productId === plusPlan?.id);
+  const basicPrice = prices.find((price) => price.productId === basicPlan?.id);
+  const standardPrice = prices.find((price) => price.productId === standardPlan?.id);
+  const proPrice = prices.find((price) => price.productId === proPlan?.id);
+  const enterprisePrice = prices.find((price) => price.productId === enterprisePlan?.id);
 
   return (
     <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <div className="grid md:grid-cols-2 gap-8 max-w-xl mx-auto">
         <PricingCard
-          name={basePlan?.name || 'Base'}
-          price={basePrice?.unitAmount || 800}
-          interval={basePrice?.interval || 'month'}
-          trialDays={basePrice?.trialPeriodDays || 7}
+          name={basicPlan?.name || 'Basic'}
+          price={basicPrice?.unitAmount || 12500}
+          interval={basicPrice?.interval || 'month'}
+          trialDays={basicPrice?.trialPeriodDays || 14}
           features={[
             'Unlimited Usage',
             'Unlimited Workspace Members',
             'Email Support',
           ]}
-          priceId={basePrice?.id}
+          priceId={basicPrice?.id}
         />
         <PricingCard
-          name={plusPlan?.name || 'Plus'}
-          price={plusPrice?.unitAmount || 1200}
-          interval={plusPrice?.interval || 'month'}
-          trialDays={plusPrice?.trialPeriodDays || 7}
+          name={standardPlan?.name || 'Standard'}
+          price={standardPrice?.unitAmount || 45000}
+          interval={standardPrice?.interval || 'month'}
+          trialDays={standardPrice?.trialPeriodDays || 14}
+          features={[
+            'Unlimited Usage',
+            'Unlimited Workspace Members',
+            'Email Support',
+          ]}
+          priceId={standardPlan?.id}
+        />
+        <PricingCard
+          name={proPlan?.name || 'Pro'}
+          price={proPrice?.unitAmount || 60000}
+          interval={proPrice?.interval || 'month'}
+          trialDays={proPrice?.trialPeriodDays || 14}
           features={[
             'Everything in Base, and:',
             'Early Access to New Features',
             '24/7 Support + Slack Access',
           ]}
-          priceId={plusPrice?.id}
+          priceId={proPlan?.id}
+        />
+        <PricingCard
+          name={enterprisePlan?.name || 'Enterprise'}
+          price={enterprisePrice?.unitAmount || 125000}
+          interval={enterprisePrice?.interval || 'month'}
+          trialDays={enterprisePrice?.trialPeriodDays || 14}
+          features={[
+            'Everything in Base, and:',
+            'Early Access to New Features',
+            '24/7 Support + Slack Access',
+          ]}
+          priceId={enterprisePrice?.id}
         />
       </div>
     </main>
@@ -74,7 +102,7 @@ function PricingCard({
       <p className="text-4xl font-medium text-gray-100 mb-6">
         ${price / 100}{' '}
         <span className="text-xl font-normal text-gray-400">
-          per user / {interval}
+         / {interval}
         </span>
       </p>
       <ul className="space-y-4 mb-8">

@@ -30,14 +30,14 @@ export function InviteTeamMember() {
   >(inviteTeamMember, { error: '', success: '' });
 
   return (
-    <Card>
+    <Card className='glass'>
       <CardHeader>
-        <CardTitle>Invite Team Member</CardTitle>
+        <CardTitle className='text-white'>Invite Team Member</CardTitle>
       </CardHeader>
       <CardContent>
         <form action={inviteAction} className="space-y-4">
           <div>
-            <Label htmlFor="email">Email</Label>
+            <Label htmlFor="email" className='text-white'>Email</Label>
             <Input
               id="email"
               name="email"
@@ -48,20 +48,20 @@ export function InviteTeamMember() {
             />
           </div>
           <div>
-            <Label>Role</Label>
+            <Label className='text-white'>Role</Label>
             <RadioGroup
               defaultValue="member"
               name="role"
-              className="flex space-x-4"
+              className="flex space-x-4 text-white"
               disabled={!isOwner}
             >
               <div className="flex items-center space-x-2">
                 <RadioGroupItem value="member" id="member" />
-                <Label htmlFor="member">Member</Label>
+                <Label htmlFor="member" className='text-white'>Member</Label>
               </div>
               <div className="flex items-center space-x-2">
                 <RadioGroupItem value="owner" id="owner" />
-                <Label htmlFor="owner">Owner</Label>
+                <Label htmlFor="owner" className='text-white'>Owner</Label>
               </div>
             </RadioGroup>
           </div>
@@ -73,7 +73,7 @@ export function InviteTeamMember() {
           )}
           <Button
             type="submit"
-            className="bg-orange-500 hover:bg-orange-600 text-white"
+            className="bg-yellow-500 hover:bg-yellow-600 text-white"
             disabled={isInvitePending || !isOwner}
           >
             {isInvitePending ? (
@@ -92,7 +92,7 @@ export function InviteTeamMember() {
       </CardContent>
       {!isOwner && (
         <CardFooter>
-          <p className="text-sm text-muted-foreground">
+          <p className="text-sm text-muted-foreground text-white">
             You must be a team owner to invite new members.
           </p>
         </CardFooter>

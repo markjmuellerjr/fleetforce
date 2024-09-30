@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { ArrowRight, CreditCard, Database } from 'lucide-react';
-import { Terminal } from './terminal';
+import Spline  from '@splinetool/react-spline';
 
 export default function HomePage() {
   return (
@@ -10,28 +10,30 @@ export default function HomePage() {
           <div className="lg:grid lg:grid-cols-12 lg:gap-8">
             <div className="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
               <h1 className="text-4xl font-bold text-gray-100 tracking-tight sm:text-5xl md:text-6xl">
-                Build Your SaaS
-                <span className="block text-yellow-500">Faster Than Ever</span>
+                Your Fleet Moving
+                <span className="block text-yellow-500">More Efficiently</span>
               </h1>
               <p className="mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-                Launch your SaaS product in record time with our powerful,
-                ready-to-use template. Packed with modern technologies and
-                essential integrations.
+                Keep your fleet up to date on all service and maintenance needs. Your uptime is our priority. Faster service, less time wasted.
               </p>
               <div className="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
                 <a
-                  href="https://vercel.com/templates/next.js/next-js-saas-starter"
+                  href="./login"
                   target="_blank"
                 >
                   <Button className="bg-black hover:bg-gray-100 text-white hover:text-black border border-gray-200 rounded-full glass hover:animate-shimmer text-lg px-12 py-6 inline-flex items-center justify-center">
-                    Deploy your own
+                    Get Started Now
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Button>
                 </a>
               </div>
             </div>
             <div className="mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
-              <Terminal />
+            <Spline
+        scene="https://prod.spline.design/LKff-cwPNlsrxpg7/scene.splinecode" 
+        width={640}
+        height={280}
+      />
             </div>
           </div>
         </div>
@@ -51,11 +53,10 @@ export default function HomePage() {
               </div>
               <div className="mt-5">
                 <h2 className="text-lg font-medium text-gray-300">
-                  Next.js and React
+                  Automated Scheduling
                 </h2>
                 <p className="mt-2 text-base text-gray-100">
-                  Leverage the power of modern web technologies for optimal
-                  performance and developer experience.
+                  Recommendation Engine learns from your machines and can automatically schedule service appoints to reduce friction.
                 </p>
               </div>
             </div>
@@ -66,11 +67,10 @@ export default function HomePage() {
               </div>
               <div className="mt-5">
                 <h2 className="text-lg font-medium text-gray-300">
-                  Postgres and Drizzle ORM
+                  Fleet Management
                 </h2>
                 <p className="mt-2 text-base text-gray-100">
-                  Robust database solution with an intuitive ORM for efficient
-                  data management and scalability.
+                  Manage all your machines in one place. No matter the brand.
                 </p>
               </div>
             </div>
@@ -81,11 +81,10 @@ export default function HomePage() {
               </div>
               <div className="mt-5">
                 <h2 className="text-lg font-medium text-gray-300">
-                  Stripe Integration
+                  Invoicing & Payments
                 </h2>
                 <p className="mt-2 text-base text-gray-100">
-                  Seamless payment processing and subscription management with
-                  industry-leading Stripe integration.
+                  Seamless payment processing and and invoicing to keep your books on track.
                 </p>
               </div>
             </div>
@@ -98,21 +97,19 @@ export default function HomePage() {
           <div className="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
             <div>
               <h2 className="text-3xl font-bold text-gray-300 sm:text-4xl">
-                Ready to launch your SaaS?
+                Ready to manage your Fleet?
               </h2>
               <p className="mt-3 max-w-3xl text-lg text-gray-100">
-                Our template provides everything you need to get your SaaS up
-                and running quickly. Don't waste time on boilerplate - focus on
-                what makes your product unique.
+                Our platform provides everything you need for a fleet of different machines. Don't waste time on scheduling, let the automated system do the work for you.
               </p>
             </div>
             <div className="mt-8 lg:mt-0 flex justify-center lg:justify-end">
               <a
-                href="https://github.com/leerob/next-saas-starter"
+                href="./login"
                 target="_blank"
               >
                 <Button className="bg-black hover:bg-gray-100 text-white hover:text-black border border-gray-200 rounded-full glass hover:animate-shimmer text-lg px-12 py-6 inline-flex items-center justify-center">
-                  View the code
+                Free 14-Day Trial
                   <ArrowRight className="ml-3 h-6 w-6" />
                 </Button>
               </a>

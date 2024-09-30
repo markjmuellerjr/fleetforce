@@ -31,7 +31,7 @@ function Header() {
     <header className="border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
         <Link href="/" className="flex items-center">
-          <Image src="/logos/logo.png" alt="fleetforce logo" width={64} height={64} />
+          <Image src="/app/public/logos/logo.png" alt="fleetforce logo" width={64} height={64} />
           <span className="ml-2 text-xl font-semibold text-white">FleetForce</span>
         </Link>
         <div className="flex items-center space-x-4">
