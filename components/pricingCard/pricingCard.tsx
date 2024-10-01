@@ -42,11 +42,20 @@ const PricingCard: React.FC<PricingCardProps> = ({
     }
   };
 
+  const formatPrice = (amount: number): string => {
+    // Format to x,xxx.xx and remove trailing .00
+    return amount.toLocaleString('en-US', {
+      minimumFractionDigits: 0,
+      maximumFractionDigits: 2,
+    });
+  };
+
+
   return (
     <div className="glass p-6 rounded-xl shadow-lg transition-transform transform hover:scale-105">
       <h3 className="text-2xl font-semibold text-gray-300">{name}</h3>
       <p className="mt-4 text-4xl font-bold text-gray-100">
-        ${price}/{interval}
+        ${formatPrice(price)}/{interval}
       </p>
       <p className="mt-2 text-sm text-gray-400">
         {trialDays} day free trial

@@ -55,7 +55,7 @@ export default async function StandardPricing() {
         <>
         <PricingCard
         name={basicPlan?.name || 'Basic'}
-        price={formatPrice(basicPrice?.unitAmount) || 12500}
+        price={basicPrice?.unitAmount || 12500}
         interval={basicPrice?.interval || 'month'}
         trialDays={basicPrice?.trialPeriodDays || 14}
         features={[
@@ -71,7 +71,7 @@ export default async function StandardPricing() {
       />
       <PricingCard
         name={standardPlan?.name || 'Standard'}
-        price={formatPrice(standardPrice?.unitAmount || 45000)}
+        price={standardPrice?.unitAmount || 45000}
         interval={standardPrice?.interval || 'month'}
         trialDays={standardPrice?.trialPeriodDays || 14}
         features={[
@@ -87,7 +87,7 @@ export default async function StandardPricing() {
       />
       <PricingCard
         name={proPlan?.name || 'Pro'}
-        price={formatPrice(proPrice?.unitAmount || 60000)}
+        price={proPrice?.unitAmount || 60000}
         interval={proPrice?.interval || 'month'}
         trialDays={proPrice?.trialPeriodDays || 14}
         features={[
@@ -105,7 +105,7 @@ export default async function StandardPricing() {
       />
       <PricingCard
         name={enterprisePlan?.name || 'Enterprise'}
-        price={formatPrice(enterprisePrice?.unitAmount || 125000)}
+        price={enterprisePrice?.unitAmount || 125000}
         interval={enterprisePrice?.interval || 'month'}
         trialDays={enterprisePrice?.trialPeriodDays || 14}
         features={[
