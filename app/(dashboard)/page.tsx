@@ -1,5 +1,6 @@
+import StandardPrice from '@/components/standardPricing/standardPricing';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, CreditCard, Database } from 'lucide-react';
+import { ArrowRight, CreditCard, Database, Link } from 'lucide-react';
 // import Spline  from '@splinetool/react-spline';
 import Image from 'next/image';
 
@@ -30,11 +31,12 @@ export default function HomePage() {
             </div>
           </div>
           <div className="mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
-            {<Image src="/public/heroImages/hero-placeholder.png" alt="Fleet" width={600} height={250} className="w-full" />}
+            {<Image src="/hero-placeholder.png" alt="Fleet" width={600} height={250} className="w-full" />}
           </div>
         </div>
       </div>
-    </section><section className="py-16 bg-black w-full">
+    </section>
+    <section className="py-16 bg-black w-full">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:grid lg:grid-cols-3 lg:gap-8">
             <div>
@@ -84,7 +86,175 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-      </section><section className="py-16 bg-black">
+      </section>
+      <section className="py-20 bg-black w-full">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+      <h2 className="mb-6 text-4xl font-bold text-gray-100 tracking-tight sm:text-5xl md:text-6xl">
+              Pricing
+            </h2>
+      <div className="grid md:grid-cols-4 gap-3 max-w-xxl mx-auto">
+        <StandardPrice />
+      </div>
+      </div>
+      </div>
+      </section>
+      {/* Testimonials Section */}
+      <section className="py-20 bg-black w-full">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h2 className="text-3xl font-bold text-gray-300 sm:text-4xl">
+              What Our Clients Say
+            </h2>
+            <p className="mt-4 text-lg text-gray-100">
+              Hear from businesses that have transformed their fleet management with FleetForce.
+            </p>
+          </div>
+          <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {/* Testimonial 1 */}
+            <div className="glass p-6 rounded-xl shadow-lg transition-transform transform hover:scale-105">
+              <p className="text-gray-100">
+                "FleetForce has revolutionized the way we manage our vehicles. The automated scheduling feature alone has saved us countless hours."
+              </p>
+              <div className="mt-4 flex items-center">
+                <Image
+                  src="/testimonials/client1.jpg"
+                  alt="Client 1"
+                  width={50}
+                  height={50}
+                  className="rounded-full"
+                />
+                <div className="ml-3">
+                  <p className="text-gray-300 font-medium">Jane Doe</p>
+                  <p className="text-gray-400 text-sm">Operations Manager, XYZ Corp</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Testimonial 2 */}
+            <div className="glass p-6 rounded-xl shadow-lg transition-transform transform hover:scale-105">
+              <p className="text-gray-100">
+                "The fleet management dashboard is intuitive and comprehensive. We've seen a 30% increase in fleet efficiency since adopting FleetForce."
+              </p>
+              <div className="mt-4 flex items-center">
+                <Image
+                  src="/testimonials/client2.jpg"
+                  alt="Client 2"
+                  width={50}
+                  height={50}
+                  className="rounded-full"
+                />
+                <div className="ml-3">
+                  <p className="text-gray-300 font-medium">John Smith</p>
+                  <p className="text-gray-400 text-sm">Logistics Coordinator, ABC Logistics</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Testimonial 3 */}
+            <div className="glass p-6 rounded-xl shadow-lg transition-transform transform hover:scale-105">
+              <p className="text-gray-100">
+                "Invoicing and payments have never been easier. FleetForce's seamless integration with our accounting software has streamlined our financial processes."
+              </p>
+              <div className="mt-4 flex items-center">
+                <Image
+                  src="/testimonials/client3.jpg"
+                  alt="Client 3"
+                  width={50}
+                  height={50}
+                  className="rounded-full"
+                />
+                <div className="ml-3">
+                  <p className="text-gray-300 font-medium">Emily Johnson</p>
+                  <p className="text-gray-400 text-sm">Finance Director, DEF Industries</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Brands We Work With Section */}
+      <section className="py-20 bg-black w-full">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h2 className="text-3xl font-bold text-gray-300 sm:text-4xl">
+              Brands We Work With
+            </h2>
+            <p className="mt-4 text-lg text-gray-100">
+              Trusted by leading brands in the industry.
+            </p>
+          </div>
+          <div className="mt-12 grid gap-8 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 items-center justify-items-center">
+            {/* Brand 1 */}
+            <div className="flex items-center justify-center">
+              <Image
+                src="/brands/cat-logo.png"
+                alt="Cat"
+                width={150}
+                height={50}
+                className="object-contain transition-transform transform hover:scale-105"
+              />
+            </div>
+
+            {/* Brand 2 */}
+            <div className="flex items-center justify-center">
+              <Image
+                src="/brands/john-deere-logo.png"
+                alt="John Deere"
+                width={150}
+                height={50}
+                className="object-contain transition-transform transform hover:scale-105"
+              />
+            </div>
+
+            {/* Brand 3 */}
+            <div className="flex items-center justify-center">
+              <Image
+                src="/brands/kubota-logo.png"
+                alt="Kubota"
+                width={150}
+                height={50}
+                className="object-contain transition-transform transform hover:scale-105"
+              />
+            </div>
+
+            {/* Brand 4 */}
+            <div className="flex items-center justify-center">
+              <Image
+                src="/brands/bobcat-logo.png"
+                alt="Bobcat"
+                width={150}
+                height={50}
+                className="object-contain transition-transform transform hover:scale-105"
+              />
+            </div>
+
+            {/* Brand 5 */}
+            <div className="flex items-center justify-center">
+              <Image
+                src="/brands/komatsu-logo.png"
+                alt="Komatsu"
+                width={150}
+                height={50}
+                className="object-contain transition-transform transform hover:scale-105"
+              />
+            </div>
+
+            {/* Brand 6 */}
+            <div className="flex items-center justify-center">
+              <Image
+                src="/brands/brand6.png"
+                alt="Brand 6"
+                width={150}
+                height={50}
+                className="object-contain transition-transform transform hover:scale-105"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="py-16 bg-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
             <div>
